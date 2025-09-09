@@ -70,6 +70,26 @@
         echo "<p>@" . $username . "</p>";
         echo "<p>" . $bio . "</p>";
         echo "</div>";
+
+        // Display profile statistics
+        echo "<div class='profile1-stats'>";
+
+        echo "<div class='stat'>";
+        echo "<div class='stat-number'>" . $post_count . "</div>";
+        echo "<div class='stat-label'>Posts</div>";
+        echo "</div>";
+
+        echo "<div class='stat'>";
+        echo "<div class='stat-number'>" . $follower_count . "</div>";
+        echo "<div class='stat-label'>Followers</div>";
+        echo "</div>";
+
+        echo "<div class='stat'>";
+        echo "<div class='stat-number'>" . $following_count . "</div>";
+        echo "<div class='stat-label'>Following</div>";
+        echo "</div>";
+
+        echo "</div>";
         ?>
     </div>
 </body>
