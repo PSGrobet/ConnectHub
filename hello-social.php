@@ -48,6 +48,8 @@
          */
 
         // User information variables
+        // Sarah Johnson
+        /*
         $user_name = "Sarah Johnson";
         $username = "sarahj_designer";
         $bio = "UX designer | Coffee lover | Dog Mom 🐕";
@@ -56,6 +58,29 @@
         $post_count = 156;
         $is_verified = true;
         $is_online = true;
+        */
+
+        // Alex Chen
+        $user_name = "Alex Chen";
+        $username = "alexcodes";
+        $bio = "Full-stack developer | Building the future one line of code at a time.";
+        $follower_count = 42;
+        $following_count = 127;
+        $post_count = 8;
+        $is_verified = false;
+        $is_online = false;
+
+        // Emma Rodriguez
+        /*
+        $user_name = "Emma Rodriguez";
+        $username = "emmatravels";
+        $bio = "Travel photographer | 📸 Capturing moments around the world";
+        $follower_count = 15420;
+        $following_count = 2341;
+        $post_count = 947;
+        $is_verified = true;
+        $is_online = false;
+        */
 
         // Display the profile header
         echo "<div class='profile-header'>";
