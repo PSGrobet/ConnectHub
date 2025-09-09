@@ -59,35 +59,55 @@
 
         // Display the profile header
         echo "<div class='profile-header'>";
-        echo "<h1>" . $user_name;
+            echo "<h1>" . $user_name;
 
-        // Show verification badge if user is verified
-        if ($is_verified){
-            echo " ✓";
-        }
-        echo "</h1>";
+            // Show verification badge if user is verified
+            if ($is_verified){
+                echo " ✓";
+            }
+            echo "</h1>";
 
-        echo "<p>@" . $username . "</p>";
-        echo "<p>" . $bio . "</p>";
+            echo "<p>@" . $username . "</p>";
+            echo "<p>" . $bio . "</p>";
         echo "</div>";
 
         // Display profile statistics
-        echo "<div class='profile1-stats'>";
+        echo "<div class='profile-stats'>";
 
-        echo "<div class='stat'>";
-        echo "<div class='stat-number'>" . $post_count . "</div>";
-        echo "<div class='stat-label'>Posts</div>";
+            echo "<div class='stat'>";
+            echo "<div class='stat-number'>" . $post_count . "</div>";
+            echo "<div class='stat-label'>Posts</div>";
+            echo "</div>";
+
+            echo "<div class='stat'>";
+            echo "<div class='stat-number'>" . $follower_count . "</div>";
+            echo "<div class='stat-label'>Followers</div>";
+            echo "</div>";
+
+            echo "<div class='stat'>";
+            echo "<div class='stat-number'>" . $following_count . "</div>";
+            echo "<div class='stat-label'>Following</div>";
+            echo "</div>";
+
         echo "</div>";
 
-        echo "<div class='stat'>";
-        echo "<div class='stat-number'>" . $follower_count . "</div>";
-        echo "<div class='stat-label'>Followers</div>";
-        echo "</div>";
+        echo "<div class='user-status' style='margin-top: 20px; paddig: 15px; background: #f8f9fa; border-radius: 5px;'>";
+        
+            echo "<h3>Account Status</h3>";
 
-        echo "<div class='stat'>";
-        echo "<div class='stat-number'>" . $following_count . "</div>";
-        echo "<div class='stat-label'>Following</div>";
-        echo "</div>";
+            // Show online status
+            if (is_online) {
+                echo "<p style='color:green;'>🟢 Currently Online</p>";
+            } else {
+                echo "<p style='color: gray;'>⚫ Offline</p>";
+            }
+
+            // Show verification status
+            if (is_verified) {
+                echo "<p style='color: blue;'>✅ Verified Account</p>";
+            } else {
+                echo "<p style='color: orange;'>⚠️ Unverified Account</p>";
+            }
 
         echo "</div>";
         ?>
