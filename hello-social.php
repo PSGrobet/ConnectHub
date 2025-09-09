@@ -61,6 +61,7 @@
         */
 
         // Alex Chen
+        /*
         $user_name = "Alex Chen";
         $username = "alexcodes";
         $bio = "Full-stack developer | Building the future one line of code at a time.";
@@ -69,9 +70,10 @@
         $post_count = 8;
         $is_verified = false;
         $is_online = false;
+        */
 
         // Emma Rodriguez
-        /*
+        
         $user_name = "Emma Rodriguez";
         $username = "emmatravels";
         $bio = "Travel photographer | 📸 Capturing moments around the world";
@@ -80,7 +82,7 @@
         $post_count = 947;
         $is_verified = true;
         $is_online = false;
-        */
+        
 
         // Display the profile header
         echo "<div class='profile-header'>";
