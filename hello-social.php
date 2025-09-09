@@ -96,14 +96,14 @@
             echo "<h3>Account Status</h3>";
 
             // Show online status
-            if (is_online) {
+            if ($is_online) {
                 echo "<p style='color:green;'>🟢 Currently Online</p>";
             } else {
                 echo "<p style='color: gray;'>⚫ Offline</p>";
             }
 
             // Show verification status
-            if (is_verified) {
+            if ($is_verified) {
                 echo "<p style='color: blue;'>✅ Verified Account</p>";
             } else {
                 echo "<p style='color: orange;'>⚠️ Unverified Account</p>";
