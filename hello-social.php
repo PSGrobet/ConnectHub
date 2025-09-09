@@ -41,6 +41,9 @@
 </head>
 <body>
     <div class="profile-card">
+        <h2>Welcome to ConnectHub</h2>
+        <p>Your journey into social platform development starts here.</p>
+
         <?php
         /**
          * Social Platform Project - Chapter 1, Lesson 1.1 
@@ -117,7 +120,8 @@
             echo "</div>";
 
         echo "</div>";
-
+        
+        // Display user status
         echo "<div class='user-status' style='margin-top: 20px; paddig: 15px; background: #f8f9fa; border-radius: 5px;'>";
         
             echo "<h3>Account Status</h3>";
@@ -138,6 +142,12 @@
 
         echo "</div>";
         ?>
+
+        <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #eee;">
+            <h3>What You Just Built</h3>
+            <p>Congratulations! You've created your first dynamic social platform page using PHP variables. This profile card demonstrates the foundation of every social network - storing and displaying user information.</p>
+        </div>
+        
     </div>
 </body>
 </html>
