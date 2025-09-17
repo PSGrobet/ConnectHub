@@ -188,7 +188,7 @@ foreach ($users as $user) {
                 <?php foreach ($users as $user): ?>
                     <div class="user-card">
                         <div class="user-avatar"><?php echo $user['avatar']; ?></div>
-                        <h3><? php echo $user['name']; ?></h3>
+                        <h3><?php echo $user['name']; ?></h3>
                         <p class="username">@<?php echo $user['username']; ?></p>
 
                         <!-- Show verification badge if user is verified -->
